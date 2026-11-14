@@ -15,23 +15,23 @@
   转发到 Steam 创意工坊等壁纸平台：须在简介中注明作者和来源仓库（GitHub 上的 Ryder191/haloflux），
   严禁任何形式的盈利，详见 LICENSE。
 -->
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HALOFLUX</title>
+<title>两江智算 · AI 中枢</title>
 <style>
 :root{
-  --bg:#08090b; --panel:#0e0f12; --line:#25282e; --line2:#3a3e46;
-  --text:#cfd2d8; --dim:#6b6f78; --faint:#3f434a; --white:#f4f5f7;
-  --pink:#f0a6c6; --teal:#98e0cf;
+  --bg:#060a10; --panel:#0a1018; --line:#1b2836; --line2:#2e4256;
+  --text:#c4d3e0; --dim:#63798c; --faint:#3a4b5c; --white:#f2f7fb;
+  --pink:#4fc3ff; --teal:#6ef0d4;
 }
 *{box-sizing:border-box}
 html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:ui-monospace,"Cascadia Mono","SF Mono",Consolas,"Liberation Mono",monospace;overflow:hidden}
 .app{display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh}
 
 /* ---------- header ---------- */
-header{display:grid;grid-template-columns:minmax(240px,1.7fr) repeat(5,minmax(0,1fr));align-items:end;border-bottom:1px solid var(--line);padding:10px 18px 0;background:#0a0b0d}
+header{display:grid;grid-template-columns:minmax(240px,1.7fr) repeat(5,minmax(0,1fr));align-items:end;border-bottom:1px solid var(--line);padding:10px 18px 0;background:#081018}
 .brand h1{white-space:nowrap;margin:0;font-size:21px;font-weight:800;letter-spacing:1.5px;color:var(--white)}
 .brand p{margin:3px 0 9px;font-size:9px;color:var(--dim);letter-spacing:1.2px}
 .kpi{padding:0 10px 9px;position:relative}
@@ -54,7 +54,7 @@ header{display:grid;grid-template-columns:minmax(240px,1.7fr) repeat(5,minmax(0,
 .console{top:10px;right:14px;border:1px solid var(--line2);padding:3px 8px;background:rgba(8,9,11,.8)}
 .music{top:10px;right:104px;z-index:3;pointer-events:auto;display:flex;align-items:center;gap:6px;border:1px solid var(--line2);padding:2px 8px;background:rgba(8,9,11,.8);user-select:none}
 .music .mbtn{cursor:pointer;display:flex;align-items:center;gap:5px}
-.music:hover{border-color:#cfd2d8}
+.music:hover{border-color:#c4d3e0}
 .music .mbtn:hover em{color:#fff}
 .music em{font-style:normal;white-space:nowrap}
 .music.on em{color:var(--white)}
@@ -65,14 +65,14 @@ header{display:grid;grid-template-columns:minmax(240px,1.7fr) repeat(5,minmax(0,
 .music.on .eq b:nth-child(2){animation-delay:-.3s}
 .music.on .eq b:nth-child(3){animation-delay:-.6s}
 @keyframes eqb{0%,100%{height:2px}50%{height:8px}}
-.music input[type=range]{width:70px;height:10px;margin:0;accent-color:#cfd2d8;cursor:pointer}
+.music input[type=range]{width:70px;height:10px;margin:0;accent-color:#c4d3e0;cursor:pointer}
 .music .mval{width:16px;text-align:right;color:var(--dim);font-variant-numeric:tabular-nums}
 .status{right:16px;bottom:12px;text-align:right}
 .status .big{font-size:11px;color:var(--white);font-weight:800}
 .status .sm{color:var(--dim);font-size:8px;margin-top:2px}
 
 /* ---------- panels ---------- */
-.panels{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;padding:8px 12px 12px;border-top:1px solid var(--line);background:#0a0b0d}
+.panels{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;padding:8px 12px 12px;border-top:1px solid var(--line);background:#081018}
 .p{border:1px solid var(--line);background:var(--panel);padding:7px 10px 6px;height:clamp(118px,17vh,168px);display:flex;flex-direction:column;overflow:hidden;min-width:0}
 .p h3{margin:0 0 5px;font-size:9px;font-weight:800;letter-spacing:1.3px;color:var(--white);white-space:nowrap}
 .p .cap{margin-top:auto;font-size:8px;color:var(--dim);padding-top:3px;white-space:nowrap;overflow:hidden}
@@ -83,11 +83,11 @@ header{display:grid;grid-template-columns:minmax(240px,1.7fr) repeat(5,minmax(0,
 .feed div:last-child{color:var(--white);font-weight:600}
 .n{color:var(--faint);margin-right:8px}
 .vb{display:inline-block;width:26px;font-weight:800}
-.vb.推进{color:var(--pink)} .vb.核对{color:var(--text)} .vb.归档{color:var(--teal)} .vb.验收{color:var(--white)}
+.vb.调度{color:var(--pink)} .vb.计量{color:var(--text)} .vb.扩容{color:var(--teal)} .vb.灰度{color:var(--white)} .vb.告警{color:var(--pink)} .vb.回滚{color:var(--dim)}
 
 .btns{display:flex;gap:4px;margin-top:4px}
 .btns span{flex:1;font-size:8px;border:1px solid var(--line2);padding:1px 5px;color:var(--dim);transition:all .3s}
-.btns span.on{background:#cfd2d8;color:#000;border-color:#cfd2d8}
+.btns span.on{background:#c4d3e0;color:#000;border-color:#c4d3e0}
 
 .code{flex:1;min-height:0;font-size:9px;line-height:1.45;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end}
 .code div{white-space:nowrap}
@@ -101,15 +101,15 @@ header{display:grid;grid-template-columns:minmax(240px,1.7fr) repeat(5,minmax(0,
 .routes .h{color:var(--dim);font-weight:800;letter-spacing:1px}
 .routes .nm{color:var(--text);white-space:nowrap;overflow:hidden}
 .chip{display:inline-block;padding:0 4px;border:1px solid var(--line2);border-radius:2px;color:var(--faint);line-height:11px;transition:all .3s}
-.chip.on{background:#d6d8dd;color:#000;border-color:#d6d8dd}
-.chip.done{background:#2b2e34;color:var(--text);border-color:#2b2e34}
-.chip.pk{background:rgba(240,166,198,.25);color:var(--pink);border-color:rgba(240,166,198,.5)}
+.chip.on{background:#c9dcec;color:#000;border-color:#c9dcec}
+.chip.done{background:#1e2c3a;color:var(--text);border-color:#1e2c3a}
+.chip.pk{background:rgba(79,195,255,.25);color:var(--pink);border-color:rgba(79,195,255,.5)}
 
 .agents{display:grid;grid-template-columns:1fr 1fr;gap:2px 12px;font-size:8px;align-content:start}
 .ag{display:flex;align-items:center;gap:5px;white-space:nowrap}
 .ag .id{color:var(--faint)} .ag .rl{width:26px;color:var(--text);font-weight:600}
 .ag .cells{display:flex;gap:1px}
-.ag .cells i{width:7px;height:7px;background:#1d1f24}
+.ag .cells i{width:7px;height:7px;background:#131e29}
 .ag .st{color:var(--dim);overflow:hidden}
 .ag .st.w{color:var(--white)}
 
@@ -138,31 +138,31 @@ html,body,.stage,.p{cursor:none}
 <body>
 <div class="app">
   <header>
-    <div class="brand"><h1>LI CONGCONG / 李琮琮</h1><p>AI HUB → 企业数字化 · 智能体落地</p></div>
-    <div class="kpi"><div class="k">客户 CLIENTS</div><div class="v" id="k0">121</div><div class="seg"><i></i></div></div>
-    <div class="kpi"><div class="k">团队 TEAM</div><div class="v pink" id="k1">08</div><div class="seg"><i></i></div></div>
-    <div class="kpi"><div class="k">模块 MODULES</div><div class="v" id="k2">08</div><div class="seg"><i></i></div></div>
-    <div class="kpi"><div class="k">需求 BACKLOG</div><div class="v" id="k3">63</div><div class="seg"><i></i></div></div>
-    <div class="kpi"><div class="k">期数 PHASES</div><div class="v" id="k4">03</div><div class="seg"><i></i></div></div>
+    <div class="brand"><h1>两江智算 · AI 中枢</h1><p>LIANGJIANG AI COMPUTE · 算力 / 模型 / 智能体</p></div>
+    <div class="kpi"><div class="k">算力节点 NODES</div><div class="v" id="k0">12</div><div class="seg"><i></i></div></div>
+    <div class="kpi"><div class="k">模型 MODELS</div><div class="v pink" id="k1">28</div><div class="seg"><i></i></div></div>
+    <div class="kpi"><div class="k">智能体 AGENTS</div><div class="v" id="k2">16</div><div class="seg"><i></i></div></div>
+    <div class="kpi"><div class="k">日调用 TOKENS</div><div class="v" id="k3">8.6B</div><div class="seg"><i></i></div></div>
+    <div class="kpi"><div class="k">任务 TASKS</div><div class="v" id="k4">1.2K</div><div class="seg"><i></i></div></div>
   </header>
 
   <div class="stage" id="stageWrap">
     <canvas id="stage"></canvas>
     <audio id="bgmAudio" data-src="audio/sw421k.mp3" loop preload="auto" playsinline></audio>
-    <div class="ov chk" id="chk"><b id="chkK">口径校验</b><span id="chkV">NDR = 留存 / 期初</span></div>
-    <div class="ov status"><div class="big" id="stBig">5 / 8 模块 · 3 期推进中</div><div class="sm">业务三部 · 统一事件总线</div></div>
+    <div class="ov chk" id="chk"><b id="chkK">SLA 校验</b><span id="chkV">P99 = 82ms · 达标</span></div>
+    <div class="ov status"><div class="big" id="stBig">5 / 8 集群 · 12 节点在线</div><div class="sm">两江智算 · AI 中枢调度总线</div></div>
   </div>
 
   <section class="panels">
-    <div class="p"><h3>业务动态 / FEED</h3><div class="feed" id="feed"></div></div>
+    <div class="p"><h3>中枢动态 / FEED</h3><div class="feed" id="feed"></div></div>
     <div class="p"><h3>算力调度 / SCHEDULER</h3><canvas id="cAdv"></canvas>
-      <div class="btns" id="advBtns"><span class="on">调度</span><span>计量</span><span>结算</span></div></div>
-    <div class="p"><h3>工作台 / WORKSPACE</h3><div class="code" id="code"></div></div>
-    <div class="p"><h3>差分对照 / DIFF FIELD</h3><canvas id="cDiff"></canvas><div class="cap">同源输入 · 本地差分 · 溯源核对</div></div>
-    <div class="p"><h3>交付链路 / PIPELINE</h3><div class="routes" id="routes"></div><div class="cap">需求 → 方案 → 可运行交付</div></div>
-    <div class="p"><h3>校验缓冲 / VALIDATION</h3><canvas id="cVal"></canvas><div class="cap">数据交叉核对 · 口径一致</div></div>
-    <div class="p"><h3>08 团队 / DISPATCH</h3><div class="agents" id="agents"></div><div class="cap">并行推进 · 统一事件总线</div></div>
-    <div class="p"><h3>模块索引 / INDEX</h3><canvas id="cIdx"></canvas><div class="cap">08 模块 / 63 需求 / 3 期</div></div>
+      <div class="btns" id="advBtns"><span class="on">调度</span><span>计量</span><span>计费</span></div></div>
+    <div class="p"><h3>模型工作台 / WORKSPACE</h3><div class="code" id="code"></div></div>
+    <div class="p"><h3>推理对照 / DIFF FIELD</h3><canvas id="cDiff"></canvas><div class="cap">同源输入 · 双模型对照 · 差异溯源</div></div>
+    <div class="p"><h3>调用链路 / PIPELINE</h3><div class="routes" id="routes"></div><div class="cap">请求 → 路由 → 流式返回</div></div>
+    <div class="p"><h3>质量校验 / VALIDATION</h3><canvas id="cVal"></canvas><div class="cap">幻觉率 · 一致性 · 合规过滤</div></div>
+    <div class="p"><h3>08 集群 / CLUSTER</h3><div class="agents" id="agents"></div><div class="cap">并行推理 · 统一调度总线</div></div>
+    <div class="p"><h3>模型索引 / INDEX</h3><canvas id="cIdx"></canvas><div class="cap">28 模型 / 16 智能体 / 12 节点</div></div>
   </section>
 </div>
 
@@ -405,7 +405,7 @@ function buildWeb() {
   const b = webBase.x;
   b.beginPath(); b.arc(0, 0, R, 0, TAU);
   const g = b.createRadialGradient(0, 0, R * 0.2, 0, 0, R);
-  g.addColorStop(0, '#111215'); g.addColorStop(1, '#0c0d0f');
+  g.addColorStop(0, '#0c141d'); g.addColorStop(1, '#080e15');
   b.fillStyle = g; b.fill();
   all.forEach(c => { c.x.save(); c.x.beginPath(); c.x.arc(0, 0, R, 0, TAU); c.x.clip(); });
   curves = [];
@@ -421,7 +421,7 @@ function buildWeb() {
     const x = layer < 0 ? b : webLayers[layer].x;
     const al = Math.min(1, (layer < 0 ? 0.03 + Math.pow(rnd(), 3) * 0.28 : 0.08 + Math.pow(rnd(), 2) * 0.35) * C.webBright);
     const k = rnd();
-    x.strokeStyle = k < 0.05 ? `rgba(240,166,198,${al})` : k < 0.1 ? `rgba(180,170,235,${al})` : `rgba(228,231,238,${al})`;
+    x.strokeStyle = k < 0.05 ? `rgba(79,195,255,${al})` : k < 0.1 ? `rgba(180,170,235,${al})` : `rgba(198,222,240,${al})`;
     x.lineWidth = rr(0.4, 1.1);
     x.beginPath(); x.moveTo(p0.x, p0.y); x.quadraticCurveTo(c.x, c.y, p1.x, p1.y); x.stroke();
   }
@@ -433,7 +433,7 @@ function buildWeb() {
     b.strokeStyle = `rgba(235,238,244,${rr(0.35, 0.8)})`; b.lineWidth = 0.8;
     b.beginPath(); b.arc(px, py, s, 0, TAU); b.stroke();
     if (rnd() < 0.4) { b.beginPath(); b.arc(px + s * 2.2, py, s * 0.8, 0, TAU); b.stroke(); }
-    if (rnd() < 0.35) { b.fillStyle = 'rgba(200,204,212,.5)'; b.fillText('n' + ((rnd() * 99) | 0), px + 7, py); }
+    if (rnd() < 0.35) { b.fillStyle = 'rgba(180,200,216,.5)'; b.fillText('n' + ((rnd() * 99) | 0), px + 7, py); }
   }
   // dotted chains of small rings (as in the original)
   for (let k = 0; k < 3; k++) {
@@ -853,11 +853,12 @@ function buildCards() {
   Object.assign(rot, { from: 0, to: 0, t: 1, dur: 1, hold: 0 });
 }
 const TINTS = [[232, 234, 240], [232, 234, 240], [232, 234, 240], [232, 234, 240], [232, 234, 240], [232, 234, 240], [196, 184, 246], [196, 184, 246], [168, 222, 214], [206, 212, 150]];
-const HEAD = ['客户画像', 'AI-HUB', '合资平台 07', '模块 M04', '交付', '回款', '需求 37', '团队 09', '缓冲 A',
-  '差分场', 'STEP 1284', '批次 64x64', '方案', '调度', '风控', '企微 SAAS', '队列', '链路', '口径', '版本', '验收', '场景 12'];
-const KEYS = ['NDR', 'CAC', 'LTV', 'ARR', 'GPM', '续费', '回款', '毛利', 'Tokens', 'QPS', '延迟', 'err', '批次', 'seed'];
-const CODE_T = ['load()', 'step(u)', 'sync()', 'meter()', 'settle()', 'route()', 'parse', 'assert', 'token', 'stream', 'bill', 'ok', 'PASS',
-  'ref#12', 'diff', 'L2<tol', 'u*', '->', '==', 'dt/2', 'emit', 'push', 'read', 'fig3', 'eq4'];
+const HEAD = ['AI 中枢', '算力池 12', '模型 28', '智能体 16', 'TOKEN 网关', '推理集群', '千卡池 A',
+  '差分场', 'STEP 1284', '批次 64x64', '调度', '计量', '计费', '多模态', '队列', '链路', 'SLA',
+  '版本', '灰度', '场景 42', '国产化', '私有化'];
+const KEYS = ['Tokens', 'QPS', 'P99', 'TTFT', 'TPOT', 'GPU', '显存', '吞吐', '并发', '命中率', 'err', '批次', 'seed', '成本'];
+const CODE_T = ['route()', 'step(u)', 'stream()', 'meter()', 'billing()', 'infer()', 'parse', 'assert', 'token', 'cache', 'quota', 'ok', 'PASS',
+  'ref#12', 'diff', 'L2<tol', 'u*', '->', '==', 'ctx/2', 'emit', 'push', 'read', 'topk', 'temp'];
 const rgba = (t, a) => `rgba(${t[0]},${t[1]},${t[2]},${a})`;
 const fmtNum = () => { const k = rnd(); return k < 0.3 ? rr(0, 1).toFixed(3) : k < 0.55 ? (rr(1, 9).toFixed(1) + 'e-' + (2 + (rnd() * 5 | 0))) : k < 0.8 ? String((rnd() * 9999) | 0) : rr(0, 100).toFixed(1); };
 function glyphStrips(x, x1, y0, y1, pitch, opt, ctx) {
@@ -935,7 +936,7 @@ const BLOCKS = {
     c.font = `500 3.4px ${FONT}`;
     while (y < y1 - 5) {
       const p = rnd();
-      c.fillStyle = rgba(t, 0.55); c.fillText(pick(['read', 'build', 'review', 'qa', 'sync', 'diff']), x0, y);
+      c.fillStyle = rgba(t, 0.55); c.fillText(pick(['推理', '调度', '校验', '计数', '缓存', '对照']), x0, y);
       c.fillStyle = rgba(t, 0.9); c.textAlign = 'right'; c.fillText((p * 100 | 0) + '%', x1, y); c.textAlign = 'left';
       const bx = x0 + 15, bw = x1 - x0 - 26, segs = 12;
       for (let i = 0; i < segs; i++) { c.fillStyle = rgba(t, i / segs < p ? 0.85 : 0.14); c.fillRect(bx + i * bw / segs, y + 0.6, bw / segs - 0.6, 2); }
@@ -946,7 +947,7 @@ const BLOCKS = {
     const y = y1 - y0 > 20 ? header(c, x0, x1, y0, t) : y0 + 1, p = rr(2.4, 3.2);
     for (let yy = y; yy < y1 - p + 0.5; yy += p) for (let xx = x0; xx < x1 - p + 0.5; xx += p) {
       const v = rnd();
-      c.fillStyle = v > 0.93 ? 'rgba(240,166,198,.95)' : rgba(t, 0.08 + v * v * 0.8);
+      c.fillStyle = v > 0.93 ? 'rgba(79,195,255,.95)' : rgba(t, 0.08 + v * v * 0.8);
       c.fillRect(xx, yy, p - 0.6, p - 0.6);
     }
   },
@@ -1008,9 +1009,9 @@ function renderSlot(s) {
   for (let yy = rr(1, pitch); yy < h - 2; yy += pitch) {
     if (rnd() < 0.15) continue;
     let xx = oz0 + rr(0, 3);
-    if (rnd() < 0.45) { x.fillStyle = `rgba(225,228,236,${rr(0.55, 0.95)})`; x.fillText(String((rnd() * 999) | 0).padStart(3, '0'), xx, yy - 1); xx += 9; }
+    if (rnd() < 0.45) { x.fillStyle = `rgba(208,224,240,${rr(0.55, 0.95)})`; x.fillText(String((rnd() * 999) | 0).padStart(3, '0'), xx, yy - 1); xx += 9; }
     const n = 1 + (rnd() * 3 | 0);
-    for (let i = 0; i < n && xx < oz1; i++) { x.fillStyle = `rgba(225,228,236,${rr(0.5, 0.95)})`; x.fillRect(xx, yy, rr(1.2, 2.4), 1.2); xx += rr(2.4, 3.6); }
+    for (let i = 0; i < n && xx < oz1; i++) { x.fillStyle = `rgba(208,224,240,${rr(0.5, 0.95)})`; x.fillRect(xx, yy, rr(1.2, 2.4), 1.2); xx += rr(2.4, 3.6); }
   }
   if (rnd() < 0.45) {
     x.fillStyle = 'rgba(220,224,232,.7)';
@@ -1024,7 +1025,7 @@ function drawRing(dt) {
   S.globalCompositeOperation = 'source-over';
   S.save(); S.translate(cx, cy);
   S.beginPath(); S.arc(0, 0, RO, 0, TAU); S.arc(0, 0, R, 0, TAU, true);
-  S.fillStyle = '#040506'; S.fill('evenodd');
+  S.fillStyle = '#03070c'; S.fill('evenodd');
   let regen = 1;
   for (const s of slots) {
     const A = s.a + ringRot;
@@ -1084,7 +1085,7 @@ function drawStage(dt) {
   // background
   S.setTransform(DPR, 0, 0, DPR, 0, 0);
   S.globalCompositeOperation = 'source-over'; S.globalAlpha = 1;
-  S.fillStyle = '#08090b'; S.fillRect(0, 0, W, H);
+  S.fillStyle = '#060a10'; S.fillRect(0, 0, W, H);
 
   // glow buffer (low-res, blurred later)
   const G = glowC.x;
@@ -1114,7 +1115,7 @@ function drawStage(dt) {
     r.t += dt * C.runnerSpeed * (r.mode === 1 ? r.sp * surge : r.mode === 2 ? r.sp + 1.3 * r.t * r.t : r.sp);
     if (r.t >= 1) { runners[i] = newRunner(false); continue; }
     const p = qpt(r.cv, r.t);
-    tx.strokeStyle = r.b ? `rgba(240,166,198,${Math.min(1, 0.9 * C.runnerBright)})` : `rgba(250,251,255,${Math.min(1, 0.75 * C.runnerBright)})`;
+    tx.strokeStyle = r.b ? `rgba(79,195,255,${Math.min(1, 0.9 * C.runnerBright)})` : `rgba(246,251,255,${Math.min(1, 0.75 * C.runnerBright)})`;
     tx.lineWidth = (r.b ? 1.3 : 0.9) * C.runnerWidth;
     tx.beginPath(); tx.moveTo(r.px, r.py); tx.lineTo(p.x, p.y); tx.stroke();
     r.px = p.x; r.py = p.y;
@@ -1199,7 +1200,7 @@ function drawStage(dt) {
 }
 
 /* ---------- callout box with leader line (follows the camera) ---------- */
-const CHECKS = [['口径校验', 'NDR = 留存 / 期初'], ['毛利核算', 'GP = 收入 − 成本'], ['置信区间', 'CI = μ ± z·σ/√n'], ['续费测算', 'RR = 续费 / 到期'], ['回款周期', 'DSO = AR / 营收 × 365']];
+const CHECKS = [['SLA 校验', 'P99 = 82ms · 达标'], ['算力利用率', 'GPU-Util = 76.4%'], ['TTFT 首包', 'TTFT = 240ms'], ['缓存命中', 'HIT = 41.8%'], ['Token 计量', 'cost = in + out']];
 let chkI = 0;
 const chkEl = document.getElementById('chk');
 function drawCallout() {
@@ -1208,7 +1209,7 @@ function drawCallout() {
   const box = toScreen(cx + Math.cos(a) * (RO + 30) + 120, cy + Math.sin(a) * (RO + 30) - 40);
   const bx = Math.min(W - 190, Math.max(8, box.x)), by = Math.min(H - 60, Math.max(40, box.y));
   chkEl.style.transform = `translate(${bx}px,${by}px)`;
-  S.strokeStyle = 'rgba(230,233,238,.55)'; S.lineWidth = 0.8;
+  S.strokeStyle = 'rgba(212,230,246,.55)'; S.lineWidth = 0.8;
   S.beginPath(); S.moveTo(anchor.x, anchor.y); S.lineTo(bx, by + 12); S.stroke();
   S.fillStyle = '#fff'; S.fillRect(anchor.x - 1.5, anchor.y - 1.5, 3, 3);
 }
@@ -1228,8 +1229,11 @@ setInterval(() => {
 const segs = document.querySelectorAll('.kpi .seg i');
 function kpiTick() {
   segs.forEach(s => s.style.width = rr(25, 100) + '%');
-  const m = 3 + (rnd() * 4 | 0);
-  document.getElementById('stBig').textContent = `${m} / 8 模块 · ${8 - m} 待推进`;
+  const m = 6 + (rnd() * 3 | 0);
+  document.getElementById('stBig').textContent = `${m} / 8 集群 · ${10 + (rnd() * 4 | 0)} 节点在线`;
+  const k3 = document.getElementById('k3'), k4 = document.getElementById('k4');
+  if (k3) k3.textContent = rr(7.8, 9.4).toFixed(1) + 'B';
+  if (k4) k4.textContent = (1.0 + rnd() * 0.6).toFixed(1) + 'K';
 }
 kpiTick(); setInterval(kpiTick, 2600);
 
@@ -1237,11 +1241,12 @@ kpiTick(); setInterval(kpiTick, 2600);
    PANELS
    ========================================================= */
 // --- investigation feed ---
-const ACTS = ['客户画像补全 · 湖北 121 家', 'AI-Hub Token 网关接入新模型', '东方明见合资平台对账', '政务微信私有化报价核算',
-  'WorkBuddy 培训材料迭代', '算力券平台需求评审', '企微 SaaS 客户续费跟进', '客户拜访纪要归档',
-  '行业智能体场景梳理', 'OPC 服务商资质材料', '部门周报汇总', '合同条款复核',
-  '小程序交付验收', '客户分级口径校准', '方案 HTML 版输出', '报价单生成'];
-const VERBS = ['推进', '核对', '归档', '验收', '推进', '核对'];
+const ACTS = ['Qwen3-235B 权重加载完成 · 节点 N07', 'DeepSeek-V3 推理集群扩容至 32 卡', 'Token 网关完成灰度 · 流量 12%',
+  '多模态模型 GLM-4.5V 上线 · 视觉通道', '智能体「合同审阅」灰度发布', '算力池 A 利用率回落至 68%',
+  '国产化昇腾 910B 节点健康检查通过', '推理请求 P99 抖动 · 已自动降级', '私有化交付包 v2.6 构建完成',
+  '计费对账任务完成 · 差异 0.02%', '向量库索引重建 · 1.4 亿条', '模型评测集扩充 · 新增 800 题',
+  '安全合规过滤规则更新 · 拦截 37 次', '长文本上下文扩展至 256K', 'API 密钥轮换完成', '冷启动预热任务下发'];
+const VERBS = ['调度', '计量', '扩容', '灰度', '告警', '回滚'];
 const feed = document.getElementById('feed');
 let feedN = 37;
 function feedPush() {
@@ -1254,10 +1259,10 @@ for (let i = 0; i < 12; i++) feedPush();
 setInterval(feedPush, 650);
 
 // --- method workspace (typing) ---
-const CODE = [['clients', 'load_profiles', '(hubei)'], ['需求', 'parse_requirements', '(clients)'], ['方案', 'build_proposal', '(需求)'],
-  ['模型', 'route_token', '(ai_hub)'], ['', 'meter_usage', '(模型)'], ['', 'settle_billing', '(usage)'],
-  ['', 'sync_wecom', '(clients)'], ['', 'archive_delivery', '(方案)'], ['', 'verify_metrics', '(ndr, ltv)'],
-  ['', 'publish_report', '()']];
+const CODE = [['req', 'route_model', '(task, sla)'], ['ctx', 'build_context', '(req, 256k)'], ['tok', 'meter_tokens', '(ctx)'],
+  ['gpu', 'schedule_pod', '(tok, pool)'], ['out', 'stream_infer', '(gpu)'], ['cost', 'settle_billing', '(out)'],
+  ['q', 'guard_output', '(out)'], ['log', 'trace_span', '(req, out)'], ['', 'update_cache', '(out)'],
+  ['', 'publish_metrics', '()']];
 const codeEl = document.getElementById('code');
 let cLine = 0, cChar = 0, cNum = 7, typed = [];
 const codeStr = l => (l[0] ? l[0] + ' = ' : '') + l[1] + l[2];
@@ -1282,12 +1287,12 @@ function codeTick() {
 setInterval(codeTick, 70);
 
 // --- routes ---
-const ROUTES = ['客户画像', 'AI-Hub', '合资平台', '政务微信', '交付文档', '待补齐'];
-const COLSR = ['梳理', '归档', '验收'];
+const ROUTES = ['Token 网关', '推理集群', '智能体平台', '私有化交付', '计量计费', '待扩容'];
+const COLSR = ['接入', '调度', '计量'];
 const routesEl = document.getElementById('routes');
 const rState = ROUTES.map(() => (rnd() * 4) | 0);
 function renderRoutes() {
-  let h = '<span class="h">事项</span><span class="h">梳理</span><span class="h">归档</span><span class="h">验收</span>';
+  let h = '<span class="h">模块</span><span class="h">接入</span><span class="h">调度</span><span class="h">计量</span>';
   ROUTES.forEach((n, i) => {
     h += `<span class="nm">${n}</span>`;
     COLSR.forEach((c, j) => {
@@ -1302,10 +1307,10 @@ setInterval(() => { const i = (rnd() * ROUTES.length) | 0; rState[i] = (rState[i
 renderRoutes();
 
 // --- agents ---
-const ROLES = ['售前', '研发', '实施', '售后'];
+const ROLES = ['推理', '训练', '向量', '网关'];
 const AG = Array.from({ length: 8 }, (_, i) => ({ id: String(i + 1).padStart(2, '0'), role: ROLES[i % 4], p: rnd() * 8, sp: rr(0.6, 2), st: 'working' }));
 const agEl = document.getElementById('agents');
-const ROLE_COL = { 售前: '#98e0cf', 研发: '#f0a6c6', 实施: '#d7dae0', 售后: '#f0a6c6' };
+const ROLE_COL = { 推理: '#4fc3ff', 训练: '#7ca8ff', 向量: '#6ef0d4', 网关: '#c4d3e0' };
 agEl.innerHTML = AG.map(a => `<div class="ag"><span class="id">${a.id}</span><span class="rl">${a.role}</span><span class="cells">${'<i></i>'.repeat(6)}</span><span class="st"></span></div>`).join('');
 const agRows = [...agEl.children];
 function agentsTick(dt) {
@@ -1314,10 +1319,10 @@ function agentsTick(dt) {
     if (a.p > 9) { a.p = 0; a.sp = rr(0.6, 2); }
     const done = Math.floor(a.p);
     const cells = agRows[i].children[2].children;
-    for (let k = 0; k < 6; k++) cells[k].style.background = k < done ? ROLE_COL[a.role] : k === done ? '#5a5e66' : '#1d1f24';
-    const st = a.p < 0.6 ? '派单' : a.p > 6 ? '空闲' : '在办';
+    for (let k = 0; k < 6; k++) cells[k].style.background = k < done ? ROLE_COL[a.role] : k === done ? '#42566a' : '#131e29';
+    const st = a.p < 0.6 ? '装载' : a.p > 6 ? '空闲' : '推理';
     const se = agRows[i].children[3];
-    if (se.textContent !== st) { se.textContent = st; se.className = 'st' + (st === '在办' ? ' w' : ''); }
+    if (se.textContent !== st) { se.textContent = st; se.className = 'st' + (st === '推理' ? ' w' : ''); }
   });
 }
 
@@ -1355,13 +1360,13 @@ function drawDiff() {
   const hist = new Array(28).fill(0);
   for (let m = 0; m < 2; m++) {
     const ox = m * (mw + gap);
-    x.fillStyle = '#6b6f78'; x.fillText(m ? 'IMPLEMENTATION' : 'REFERENCE', ox, 0);
+    x.fillStyle = '#63798c'; x.fillText(m ? '模型 A 输出' : '基线输出', ox, 0);
     for (let j = 0; j < rows; j++) for (let i = 0; i < cols; i++) {
       let v = 0.5 + 0.25 * Math.sin(i * 0.45 + T * 0.8) * Math.cos(j * 0.5 - T * 0.5) + 0.2 * Math.sin((i + j) * 0.3 + T);
       let err = 0;
       if (m) { const dx = i - 15 - Math.sin(T * 0.7) * 3, dy = j - 6; err = Math.exp(-(dx * dx + dy * dy) / 6) * (0.5 + 0.5 * Math.sin(T * 2)); v += err * 0.3; hist[Math.min(27, (err * 27) | 0)]++; }
       const g = Math.max(0, Math.min(255, v * 210 + 20)) | 0;
-      x.fillStyle = err > 0.35 ? `rgba(240,166,198,${0.5 + err * 0.5})` : `rgb(${g},${g},${g + 4})`;
+      x.fillStyle = err > 0.35 ? `rgba(79,195,255,${0.5 + err * 0.5})` : `rgb(${g},${g},${g + 4})`;
       x.fillRect(ox + i * cw, 10 + j * ch, cw - 0.6, ch - 0.6);
     }
   }
@@ -1369,7 +1374,7 @@ function drawDiff() {
   const mx = Math.max(...hist.slice(1), 1);
   hist.forEach((v, i) => {
     const hh = i === 0 ? bh * 0.9 : (v / mx) * bh * 0.8 + 1;
-    x.fillStyle = i > 9 ? '#f0a6c6' : '#8a8e97';
+    x.fillStyle = i > 9 ? '#4fc3ff' : '#6f8698';
     x.fillRect(i * bw, by + bh - hh, bw - 1, hh);
   });
 }
@@ -1378,7 +1383,7 @@ let valBuf = [[], [], []], valSpike = 0;
 function drawVal() {
   const x = cVal.x, w = cVal.w, h = cVal.h;
   x.clearRect(0, 0, w, h);
-  const lw = 58, n = Math.floor((w - lw) / 2), names = ['毛利', '续费', '回款'];
+  const lw = 58, n = Math.floor((w - lw) / 2), names = ['一致性', '合规', '延迟'];
   if (rnd() < 0.01) valSpike = 1;
   valSpike *= 0.9;
   const vals = [Math.sin(T * 3) * 0.35 + Math.sin(T * 7.3) * 0.15 + gauss() * 0.06,
@@ -1389,15 +1394,15 @@ function drawVal() {
   const rh = h / 3;
   for (let k = 0; k < 3; k++) {
     const yc = rh * k + rh / 2;
-    x.fillStyle = '#9a9ea7'; x.fillText(names[k], 0, yc);
-    x.strokeStyle = '#1f2227'; x.lineWidth = 1; x.beginPath(); x.moveTo(lw, yc); x.lineTo(w, yc); x.stroke();
-    x.strokeStyle = k === 1 && valSpike > 0.2 ? '#f0a6c6' : '#e6e8ec'; x.lineWidth = 1.1;
+    x.fillStyle = '#7f94a6'; x.fillText(names[k], 0, yc);
+    x.strokeStyle = '#16202b'; x.lineWidth = 1; x.beginPath(); x.moveTo(lw, yc); x.lineTo(w, yc); x.stroke();
+    x.strokeStyle = k === 1 && valSpike > 0.2 ? '#4fc3ff' : '#dfeaf5'; x.lineWidth = 1.1;
     x.beginPath();
     valBuf[k].forEach((v, i) => { const px = lw + i * 2, py = yc - v * rh * 0.45; i ? x.lineTo(px, py) : x.moveTo(px, py); });
     x.stroke();
   }
   const cxr = lw + valBuf[0].length * 2;
-  x.strokeStyle = 'rgba(240,166,198,.6)'; x.beginPath(); x.moveTo(cxr, 0); x.lineTo(cxr, h); x.stroke();
+  x.strokeStyle = 'rgba(79,195,255,.6)'; x.beginPath(); x.moveTo(cxr, 0); x.lineTo(cxr, h); x.stroke();
 }
 
 const IDX = Array.from({ length: 11 }, () => Array.from({ length: 28 }, () => rnd()));
@@ -1409,17 +1414,17 @@ function drawIdx() {
   const scan = Math.floor((T * 6) % cols);
   if (rnd() < 0.3) { const r = (rnd() * rows) | 0, c = (rnd() * cols) | 0; IDX[r][c] = rnd(); }
   for (let j = 0; j < rows; j++) {
-    x.fillStyle = '#6b6f78'; x.fillText('M' + String(j + 1).padStart(2, '0'), 0, j * ch + ch / 2);
+    x.fillStyle = '#63798c'; x.fillText('M' + String(j + 1).padStart(2, '0'), 0, j * ch + ch / 2);
     let match = 0;
     for (let i = 0; i < cols; i++) {
       const v = IDX[j][i];
-      x.fillStyle = v > 0.86 ? '#f0a6c6' : v > 0.7 ? 'rgba(240,166,198,.45)' : v > 0.4 ? '#4a4e56' : '#1c1e23';
-      if (i === scan) x.fillStyle = v > 0.4 ? '#ffffff' : '#3a3e46';
+      x.fillStyle = v > 0.86 ? '#4fc3ff' : v > 0.7 ? 'rgba(79,195,255,.45)' : v > 0.4 ? '#37495a' : '#101a24';
+      if (i === scan) x.fillStyle = v > 0.4 ? '#ffffff' : '#2e4256';
       x.fillRect(lx + i * cw, j * ch + 1, cw - 1, ch - 2);
       if (v > 0.7) match++;
     }
-    x.fillStyle = match > 7 ? '#f0a6c6' : '#9a9ea7';
-    x.fillText(match > 7 ? 'review' : 'match', w - rx + 4, j * ch + ch / 2);
+    x.fillStyle = match > 7 ? '#4fc3ff' : '#7f94a6';
+    x.fillText(match > 7 ? '复核' : '匹配', w - rx + 4, j * ch + ch / 2);
   }
 }
 

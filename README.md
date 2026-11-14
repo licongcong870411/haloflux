@@ -4,7 +4,9 @@
 
 **在线预览（GitHub Pages）：<https://licongcong870411.github.io/haloflux/>**
 
-> 本仓库是 [Ryder191/haloflux](https://github.com/Ryder191/haloflux) 的 GitHub Pages 部署镜像，代码与原作一致，未做修改。著作权归原作者 Ryder191（RYDER CODE / Ms MAIKEBAIs CAT）所有，按 PolyForm Noncommercial License 1.0.0 授权，**仅限非商业用途**。
+> 「两江智算 · AI 中枢」定制版入口：<https://licongcong870411.github.io/haloflux/personal/index.html>
+
+> 本仓库是 [Ryder191/haloflux](https://github.com/Ryder191/haloflux) 的 GitHub Pages 部署镜像。根目录 `lab.html` / `mobile.html` 为原作代码，未做修改；`personal/` 为「两江智算 · AI 中枢」展示文案与配色改版（**未改动原作视觉设计与引擎**）。著作权归原作者 Ryder191（RYDER CODE / Ms MAIKEBAIs CAT）所有，按 PolyForm Noncommercial License 1.0.0 授权，**仅限非商业用途**。首页入口已指向定制版，原作桌面版保留在 `lab.html`。
 
 **English** | [中文](#中文说明)
 
@@ -25,6 +27,7 @@ A full-screen, beat-driven sci-fi data visualization — a woven light-field cor
 | `index.html` | Entry page: opens `mobile.html` on touch devices, `lab.html` otherwise |
 | `audio/sw421k.mp3` | Background music (see Credits) |
 | `wallpaper/` | Wallpaper Engine / Lively Wallpaper edition (see below) |
+| `personal/` | 「两江智算 · AI 中枢」remix — copy & color accents only, same engine |
 
 Showcase video: https://b23.tv/mBUoC3r
 
@@ -121,6 +124,7 @@ Versions published before 2026-10-26 were released under MIT; from 2026-10-26 on
 | `index.html` | 入口页：触屏设备自动打开 `mobile.html`，其他设备打开 `lab.html` |
 | `audio/sw421k.mp3` | 背景音乐（见「致谢」） |
 | `wallpaper/` | 动态壁纸版（Wallpaper Engine / Lively Wallpaper，见下文） |
+| `personal/` | 「两江智算 · AI 中枢」定制版（仅文案与配色，引擎与原作一致） |
 
 演示视频：https://b23.tv/mBUoC3r
 

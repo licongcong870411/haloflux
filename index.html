@@ -11,16 +11,29 @@
   源代码与视觉设计均为原创作品，受著作权保护。按 PolyForm Noncommercial 1.0.0 授权。
   仅限非商业用途，严格禁止任何商业用途。转载或二创须保留本声明并注明出处。
 -->
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HALOFLUX</title>
-<style>html,body{margin:0;height:100%;background:#050608;color:#9aa;font:13px Consolas,monospace;display:flex;align-items:center;justify-content:center}a{color:#dde}</style>
+<title>两江智算 · AI 中枢</title>
+<style>
+  html,body{margin:0;height:100%;background:#05080d;color:#8fa6b8;
+    font:13px ui-monospace,Consolas,monospace;display:flex;align-items:center;justify-content:center}
+  a{color:#c4d3e0;text-decoration:none;border-bottom:1px solid #2e4256;padding-bottom:1px}
+  a:hover{color:#4fc3ff;border-color:#4fc3ff}
+  .box{text-align:center;line-height:2.1}
+  .ttl{color:#f2f7fb;font-weight:800;letter-spacing:2.5px;font-size:15px;margin-bottom:12px}
+  .sm{color:#3a4b5c;font-size:11px;margin-top:16px;letter-spacing:.5px}
+</style>
 <script>
-  var touch = matchMedia('(pointer: coarse)').matches || /iPhone|iPad|Android|Mobile/i.test(navigator.userAgent);
-  location.replace((touch ? 'mobile.html' : 'lab.html') + location.search);
+  location.replace('personal/index.html' + location.search);
 </script>
 </head>
-<body><p><a href="lab.html">Desktop</a> · <a href="mobile.html">Mobile</a></p></body>
+<body>
+<div class="box">
+  <div class="ttl">两江智算 · AI 中枢</div>
+  <div><a href="personal/index.html">进入光环控制台</a> &nbsp;·&nbsp; <a href="lab.html">原作桌面版</a> &nbsp;·&nbsp; <a href="mobile.html">移动版</a></div>
+  <div class="sm">HALOFLUX by Ryder191 · PolyForm Noncommercial 1.0.0</div>
+</div>
+</body>
 </html>
