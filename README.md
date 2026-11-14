@@ -2,6 +2,10 @@
 
 > RYDER CODE / Ms MAIKEBAIs CAT
 
+**在线预览（GitHub Pages）：<https://licongcong870411.github.io/haloflux/>**
+
+> 本仓库是 [Ryder191/haloflux](https://github.com/Ryder191/haloflux) 的 GitHub Pages 部署镜像，代码与原作一致，未做修改。著作权归原作者 Ryder191（RYDER CODE / Ms MAIKEBAIs CAT）所有，按 PolyForm Noncommercial License 1.0.0 授权，**仅限非商业用途**。
+
 **English** | [中文](#中文说明)
 
 A full-screen, beat-driven sci-fi data visualization — a woven light-field core, a rotating ring of micro data panels, and layered beams bursting outward. Pure native Canvas, single HTML file, zero dependencies.
